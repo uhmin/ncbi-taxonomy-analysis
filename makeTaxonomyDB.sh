@@ -25,3 +25,8 @@ create table if not exists gi_gb_table(gb, gi, type);
 create index gi_taxid_nucl_index on gi_taxid_nucl(gi);
 create index names_index on names(tax_id);
 create index nodes_index on nodes(tax_id);
+create index gi_gb_table_index on gi_gb_table(gb);
+
+EOF
+
+mv taxonomy.db.pre taxonomy.db
